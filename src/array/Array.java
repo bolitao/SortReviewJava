@@ -112,7 +112,6 @@ public class Array<E> {
         // loitering objects != memory leak
         data[size] = null;
         if (size == data.length / 4 && data.length / 2 != 0) {
-            // TODO: / 4?
             resize(data.length / 2);
         }
         return removedValue;
